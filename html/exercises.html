@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../img/html-logo.png" type="image/x-icon" />
+     <!-- Description for search engines -->
+    <meta name="description" content="Test your HTML skills with interactive coding challenges and mini projects.">
+
+    <!-- Keywords (optional but helps slightly with SEO) -->
+    <meta
+      name="keywords"
+      content="HTML, Learn HTML, HTML Tutorial, Beginner HTML, HTML Practice"
+    />
+
+    <!-- Author -->
+    <meta name="author" content="Vuthy" />
+
+    <!-- Open Graph (for social sharing previews) -->
+    <meta property="og:title" content="HTML Learner" />
+    <meta
+      property="og:description"
+      content="Boost your HTML skills with hands-on coding challenges and practical examples on HTML Learner."
+    />
+    <meta
+      property="og:image"
+      content="../img/OG-img.png"
+    />
+    <meta property="og:url" content="https://html-learner.vercel.app/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card (for Twitter sharing) -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="HTML Learner" />
+    <meta
+      name="twitter:description"
+      content="Learn and practice HTML through interactive challenges on HTML Learner."
+    />
+    <meta
+      name="twitter:image"
+      content="../img/OG-img.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/exercises.css" />
+    <title>HTML Learner Exercises</title>
+  </head>
+  <body>
+    <a href="#back-to-top" id="back-to-top-btn" class="back-to-top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
+    <header>
+      <a href="../html/index.html">
+        <div class="logo">
+          <img src="../img/html-logo.png" alt="html-logo" />
+          <span style="color: var(--text-color)"
+            >HTML <span class="Learner">Learner</span></span
+          >
+        </div>
+      </a>
+
+      <!-- Add hamburger button -->
+      <button class="mobile-menu-toggle" aria-label="Toggle menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <nav class="main-nav">
+        <ul>
+          <li><a href="../html/index.html">Home</a></li>
+          <li><a href="../html/exercises.html" class="active">Exercises</a></li>
+          <li><a href="../html/docs.html">Docs</a></li>
+          <li><a href="../html/about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-container">
+      <aside class="sidebar">
+        <div class="sidebar-content">
+          <p class="section-title">Challenge Categories</p>
+          <ul>
+            <li><a href="#trading-card" class="active">Trading Card</a></li>
+            <li><a href="#form">Forms</a></li>
+            <li><a href="#data-dashboard">Data Dashboard</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#minimal-style-form">Minimal-Style Form</a></li>
+          </ul>
+
+          <div class="difficulty-levels">
+            <p class="section-title">Challenge Difficulty</p>
+            <div class="difficulty-container">
+              <a href="#beginner">
+                <div class="difficulty-item beginner">
+                  <div class="level">
+                    <div class="difficulty-marker"></div>
+                    <span class="difficulty-label">Beginner</span>
+                  </div>
+                  <span class="difficulty-description"
+                    >Great for new learners</span
+                  >
+                </div>
+              </a>
+              <a href="#intermediate">
+                <div class="difficulty-item intermediate">
+                  <div class="level">
+                    <div class="difficulty-marker"></div>
+                    <span class="difficulty-label">Intermediate</span>
+                  </div>
+                  <span class="difficulty-description"
+                    >Some experience needed</span
+                  >
+                </div>
+              </a>
+              <a href="#advanced">
+                <div class="difficulty-item advanced">
+                  <div class="level">
+                    <div class="difficulty-marker"></div>
+                    <span class="difficulty-label">Advanced</span>
+                  </div>
+                  <span class="difficulty-description"
+                    >For seasoned developers</span
+                  >
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <section class="page-header">
+          <h1>HTML Learner Challenges</h1>
+          <p>
+            A collection of HTML-focused challenges to test and improve your
+            skills. Practice building real-world components without using any
+            frameworks.
+          </p>
+        </section>
+
+        <!-- Challenge 1: Personal HTML Trading Card -->
+        <section id="beginner"></section>
+        <section class="challenge-card" id="trading-card">
+          <div class="challenge-header beginner-border">
+            <span class="challenge-badge beginner-badge">Beginner</span>
+            <h2 class="challenge-title">Personal HTML Trading Card</h2>
+          </div>
+
+          <p class="challenge-description">
+            Create a personal profile card styled like a collectible trading
+            card. Show your skills and interests in a visually appealing way.
+          </p>
+
+          <div class="challenge-details">
+            <div class="requirements">
+              <h4>Requirements</h4>
+              <ul>
+                <li>
+                  Use only HTML5 and inline styles (no external CSS allowed)
+                </li>
+                <li>Include your name, photo (optional), and 5+ attributes</li>
+                <li>Add a brief description of your skills</li>
+                <li>Make it visually appealing with borders</li>
+                <li>
+                  Include at least 3 sections: header, main content, footer
+                </li>
+                <li>
+                  Create a "stats" table showing different numerical values
+                </li>
+                <li>Add margins between sections</li>
+                <li>Use web-safe fonts only (no Google Fonts)</li>
+                <li>Include a subtle background color</li>
+                <li>On click, change element color (using only HTML)</li>
+              </ul>
+            </div>
+
+            <div class="deliverables">
+              <h4>Deliverables</h4>
+              <ul>
+                <li>A single HTML file under 100KB</li>
+                <li>No external CSS files allowed</li>
+                <li>No JavaScript required</li>
+                <li>Must display correctly in modern browsers</li>
+                <li>File name: trading-card.html</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="example-preview">
+            <h4>Example Preview</h4>
+            <div class="preview-image">
+              <div class="trading-card">
+                <div class="card-header">
+                  <span class="card-number">#001</span>
+                  <span class="card-type">DEVELOPER PROFILE</span>
+                </div>
+
+                <div class="card-body">
+                  <div class="profile-section">
+                    <div class="avatar-placeholder">
+                      <i class="fas fa-user-circle"></i>
+                    </div>
+                    <h3 class="profile-name">Sophia</h3>
+                    <p class="profile-title">Frontend Developer</p>
+                  </div>
+
+                  <div class="skills-section">
+                    <div class="skill-row">
+                      <span class="skill-name">HTML</span>
+                      <div class="skill-rating">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                      </div>
+                    </div>
+
+                    <div class="skill-row">
+                      <span class="skill-name">CSS</span>
+                      <div class="skill-rating">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star half">☆</span>
+                      </div>
+                    </div>
+
+                    <div class="skill-row">
+                      <span class="skill-name">JavaScript</span>
+                      <div class="skill-rating">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star">☆</span>
+                        <span class="star">☆</span>
+                      </div>
+                    </div>
+
+                    <div class="skill-row">
+                      <span class="skill-name">UX Design</span>
+                      <div class="skill-rating">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star half">☆</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-footer">
+                  <span class="quote">"Clean code is my passion"</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="submission">
+            <div class="submission-text">
+              Submission: Once you complete the challenge, share your solution
+              by submitting your solution filename.
+            </div>
+            <a href="#" class="submit-button">Submit Solution</a>
+          </div>
+        </section>
+
+        <!-- Challenge 2: Interactive Story with Forms -->
+        <section id="intermediate"></section>
+        <section class="challenge-card" id="form">
+          <div class="challenge-header intermediate-border">
+            <span class="challenge-badge intermediate-badge">Intermediate</span>
+            <h2 class="challenge-title">Interactive Story with Forms</h2>
+          </div>
+
+          <p class="challenge-description">
+            Create an interactive "Choose Your Own Adventure" story that lets
+            users make decisions using HTML forms. This tests your ability to
+            link multiple pages and use form elements.
+          </p>
+
+          <div class="challenge-details">
+            <div class="requirements">
+              <h4>Requirements</h4>
+              <ul>
+                <li>Create an HTML form with different routes</li>
+                <li>Include at least 5 story paths</li>
+                <li>Add at least 3 different form controls</li>
+                <li>Use radio buttons or select menus for different choices</li>
+                <li>Each path should lead to a different outcome</li>
+                <li>Add some visual styling with inline styles</li>
+                <li>Include a "reset" button to start over</li>
+                <li>Add an image to at least one page (placeholder OK)</li>
+                <li>No JavaScript required</li>
+                <li>Use form GET method for navigation</li>
+              </ul>
+            </div>
+
+            <div class="deliverables">
+              <h4>Deliverables</h4>
+              <ul>
+                <li>A set of HTML files (suggested one per story page)</li>
+                <li>Must work without JavaScript</li>
+                <li>No external CSS files allowed</li>
+                <li>Must display correctly in Chrome/Firefox</li>
+                <li>Files should be interconnected through form submissions</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="example-preview">
+            <h4>Example Preview</h4>
+            <div class="preview-image">
+              <div class="story-preview">
+                <div class="story-header">
+                  <h3 class="story-title">The Forest Journey</h3>
+                  <div class="story-progress">
+                    <span class="progress-step active">1</span>
+                    <span class="progress-divider"></span>
+                    <span class="progress-step">2</span>
+                    <span class="progress-divider"></span>
+                    <span class="progress-step">3</span>
+                  </div>
+                </div>
+
+                <div class="story-content">
+                  <p class="story-text">
+                    You find yourself at a fork in the road. A misty path leads
+                    to the left, while a sunny trail extends to the right. Which
+                    way will you choose?
+                  </p>
+
+                  <div class="story-choices">
+                    <form action="#" method="get">
+                      <div class="choice-option">
+                        <input
+                          type="radio"
+                          name="path"
+                          id="left"
+                          value="left"
+                          class="choice-input"
+                        />
+                        <label for="left" class="choice-label">
+                          <span class="choice-icon">🌫️</span>
+                          <span class="choice-text"
+                            >Take the misty path to the left</span
+                          >
+                        </label>
+                      </div>
+
+                      <div class="choice-option">
+                        <input
+                          type="radio"
+                          name="path"
+                          id="right"
+                          value="right"
+                          class="choice-input"
+                        />
+                        <label for="right" class="choice-label">
+                          <span class="choice-icon">☀️</span>
+                          <span class="choice-text"
+                            >Follow the sunny trail to the right</span
+                          >
+                        </label>
+                      </div>
+
+                      <button type="submit" class="story-submit">
+                        Continue Journey
+                        <i class="fas fa-arrow-right"></i>
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="submission">
+            <div class="submission-text">
+              Submission: Once you complete the challenge, share your solution
+              by submitting your solution filename.
+            </div>
+            <a href="#" class="submit-button">Submit Solution</a>
+          </div>
+        </section>
+
+        <!-- Challenge 3: HTML-Only Data Dashboard -->
+        <section id="advanced"></section>
+        <section class="challenge-card" id="data-dashboard">
+          <div class="challenge-header advanced-border">
+            <span class="challenge-badge advanced-badge">Advanced</span>
+            <h2 class="challenge-title">HTML Data Dashboard</h2>
+          </div>
+
+          <p class="challenge-description">
+            Create a data visualization dashboard using only HTML elements.
+            Display fictional sales or analytics data in an organized layout
+            without using JavaScript or CSS frameworks.
+          </p>
+
+          <div class="challenge-details">
+            <div class="requirements">
+              <h4>Requirements</h4>
+              <ul>
+                <li>Use HTML tables to create a organized data display</li>
+                <li>Include at least 5 different metrics</li>
+                <li>Create a layout with multiple sections</li>
+                <li>Add color coding using inline styles</li>
+                <li>Use semantic HTML elements where appropriate</li>
+                <li>A responsive layout that adapts to different widths</li>
+                <li>Include a comparison between metrics</li>
+                <li>Add table headers and proper labeling</li>
+                <li>Create a legend for any color-coded elements</li>
+                <li>No JavaScript necessary</li>
+              </ul>
+            </div>
+
+            <div class="deliverables">
+              <h4>Deliverables</h4>
+              <ul>
+                <li>A single HTML file named "dashboard.html"</li>
+                <li>No external CSS or JavaScript files</li>
+                <li>All styles must be inline</li>
+                <li>Must display correctly in modern browsers</li>
+                <li>File size must be less than 150KB</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="example-preview">
+            <h4>Example Data Table</h4>
+            <div class="data-preview">
+              <h4 class="preview-title">Quarterly Sales Performance</h4>
+              <div class="table-container">
+                <table class="modern-data-table">
+                  <thead>
+                    <tr>
+                      <th class="product-col">Product</th>
+                      <th>Q1</th>
+                      <th>Q2</th>
+                      <th>Q3</th>
+                      <th>Q4</th>
+                      <th class="total-col">Total</th>
+                      <th class="trend-col">Trend</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="product-name">
+                        <span class="product-icon">📊</span>
+                        Widget A
+                      </td>
+                      <td>125</td>
+                      <td>253 <span class="change up">+128</span></td>
+                      <td>301 <span class="change up">+48</span></td>
+                      <td>392 <span class="change up">+91</span></td>
+                      <td class="total-value">1,071</td>
+                      <td class="trend-cell">
+                        <div class="trend up-trend">
+                          <div class="bar" style="height: 30%"></div>
+                          <div class="bar" style="height: 60%"></div>
+                          <div class="bar" style="height: 75%"></div>
+                          <div class="bar" style="height: 100%"></div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="product-name">
+                        <span class="product-icon">📈</span>
+                        Widget B
+                      </td>
+                      <td>84</td>
+                      <td>157 <span class="change up">+73</span></td>
+                      <td>209 <span class="change up">+52</span></td>
+                      <td>310 <span class="change up">+101</span></td>
+                      <td class="total-value">760</td>
+                      <td class="trend-cell">
+                        <div class="trend up-trend">
+                          <div class="bar" style="height: 25%"></div>
+                          <div class="bar" style="height: 45%"></div>
+                          <div class="bar" style="height: 60%"></div>
+                          <div class="bar" style="height: 90%"></div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      <td>Quarterly Average</td>
+                      <td>105</td>
+                      <td>205</td>
+                      <td>255</td>
+                      <td>351</td>
+                      <td class="total-value">916</td>
+                      <td></td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+              <div class="table-legend">
+                <span class="legend-item"
+                  ><span class="up-arrow">↑</span> Growth</span
+                >
+                <span class="legend-item"
+                  ><span class="product-icon">📊</span> Product</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="submission">
+            <div class="submission-text">
+              Submission: Once you complete the challenge, share your solution
+              by submitting your solution filename.
+            </div>
+            <a href="#" class="submit-button">Submit Solution</a>
+          </div>
+        </section>
+
+        <!-- Challenge 4: HTML-Only Resume Builder -->
+        <section class="challenge-card" id="resume">
+          <div class="challenge-header intermediate-border">
+            <span class="challenge-badge intermediate-badge">Intermediate</span>
+            <h2 class="challenge-title">HTML-Only Resume Builder</h2>
+          </div>
+
+          <p class="challenge-description">
+            Create a structured, well-formatted resume using only HTML tags.
+            This will test your understanding of semantic HTML and document
+            structure without relying on external CSS.
+          </p>
+
+          <div class="challenge-details">
+            <div class="requirements">
+              <h4>Requirements</h4>
+              <ul>
+                <li>Create a professional resume layout with semantics</li>
+                <li>Use appropriate HTML tags for each component</li>
+                <li>Include sections: header, work experience, skills, etc.</li>
+                <li>Add internal navigation links to sections</li>
+                <li>Add appropriate semantic elements</li>
+                <li>Create a printer-friendly layout</li>
+                <li>Use HTML entities for special characters</li>
+                <li>Add a small photo (optional)</li>
+                <li>Use details/summary for expandable sections</li>
+                <li>Add a contact form at the bottom</li>
+              </ul>
+            </div>
+
+            <div class="deliverables">
+              <h4>Deliverables</h4>
+              <ul>
+                <li>An HTML file named "resume.html"</li>
+                <li>No external CSS files allowed</li>
+                <li>All styles must be inline</li>
+                <li>Must be printer-friendly</li>
+                <li>Must display correctly on mobile devices</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="example-preview">
+            <h4>Example Resume Output</h4>
+            <div class="preview-image">
+              <div class="resume-preview">
+                <div class="resume-header">
+                  <div class="resume-photo">
+                    <i class="fas fa-user-circle"></i>
+                  </div>
+                  <div class="resume-title">
+                    <h1>Jane Developer</h1>
+                    <h2>Frontend Developer</h2>
+                  </div>
+                </div>
+
+                <div class="resume-body">
+                  <div class="resume-section">
+                    <h3 class="section-title">
+                      <i class="fas fa-code section-icon"></i>
+                      Technical Skills
+                    </h3>
+                    <div class="skills-container">
+                      <div class="skill-category">
+                        <h4>Core Technologies</h4>
+                        <ul class="skill-list">
+                          <li>HTML5</li>
+                          <li>CSS3/Sass</li>
+                          <li>JavaScript (ES6+)</li>
+                        </ul>
+                      </div>
+                      <div class="skill-category">
+                        <h4>Frameworks</h4>
+                        <ul class="skill-list">
+                          <li>React.js</li>
+                          <li>Vue.js</li>
+                          <li>Node.js</li>
+                        </ul>
+                      </div>
+                      <div class="skill-category">
+                        <h4>Tools</h4>
+                        <ul class="skill-list">
+                          <li>Git/GitHub</li>
+                          <li>Webpack</li>
+                          <li>Figma</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="resume-section">
+                    <h3 class="section-title">
+                      <i class="fas fa-briefcase section-icon"></i>
+                      Experience
+                    </h3>
+                    <div class="experience-item">
+                      <h4>Senior Frontend Developer</h4>
+                      <div class="experience-meta">
+                        <span class="company">Tech Solutions Inc.</span>
+                        <span class="date">2020 - Present</span>
+                      </div>
+                      <ul class="experience-details">
+                        <li>
+                          Led migration to React for company's flagship product
+                        </li>
+                        <li>
+                          Improved performance by 40% through code optimization
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="resume-footer">
+                  <div class="contact-item">
+                    <i class="fas fa-envelope"></i> jane@developer.com
+                  </div>
+                  <div class="contact-item">
+                    <i class="fas fa-phone"></i> (123) 456-7890
+                  </div>
+                  <div class="contact-item">
+                    <i class="fab fa-github"></i> github.com/janedev
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="submission">
+            <div class="submission-text">
+              Submission: Once you complete the challenge, share your solution
+              by submitting your solution filename.
+            </div>
+            <a href="#" class="submit-button">Submit Solution</a>
+          </div>
+        </section>
+
+        <!-- Challenge 5: Minimal Style Form Capture -->
+        <section class="challenge-card" id="minimal-style-form">
+          <div class="challenge-header advanced-border">
+            <span class="challenge-badge advanced-badge">Advanced</span>
+            <h2 class="challenge-title">Minimal-Style Form Capture</h2>
+          </div>
+
+          <p class="challenge-description">
+            Create a clean, minimal HTML form that captures user information in
+            an elegant way. Focus on semantics and proper form structure while
+            keeping the design simple.
+          </p>
+
+          <div class="challenge-details">
+            <div class="requirements">
+              <h4>Requirements</h4>
+              <ul>
+                <li>Create a properly structured form</li>
+                <li>Include at least 6 different form elements</li>
+                <li>Use appropriate input types</li>
+                <li>Group related fields with fieldsets</li>
+                <li>Add proper validation attributes</li>
+                <li>Include clear, accessible labels</li>
+                <li>Use placeholder text appropriately</li>
+                <li>Create a minimal style using only HTML</li>
+                <li>No external CSS or JavaScript required</li>
+                <li>Form should be fully accessible</li>
+              </ul>
+            </div>
+
+            <div class="deliverables">
+              <h4>Deliverables</h4>
+              <ul>
+                <li>A single HTML file under the size of 100KB</li>
+                <li>No external resources required</li>
+                <li>Must validate with W3C validator</li>
+                <li>All form elements should be properly connected</li>
+                <li>Submit button should reset the form</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="example-preview">
+            <h4>Example Snippet (CSS)</h4>
+            <div class="preview-image">
+              <div class="enhanced-code-preview">
+                <div class="code-header">
+                  <span class="code-title">CSS Example</span>
+                  <div class="code-actions">
+                    <button class="copy-btn" title="Copy code">
+                      <i class="far fa-copy"></i>
+                    </button>
+                  </div>
+                </div>
+                <pre
+                  class="code-block"
+                ><code class="language-css"><span class="code-comment">/* Example of inline HTML styles */</span>
+<span class="code-selector">input[type=text]</span> {
+  <span class="code-property">padding</span>: <span class="code-value">10px</span>;
+  <span class="code-property">border</span>: <span class="code-value">1px solid #ddd</span>;
+  <span class="code-property">border-radius</span>: <span class="code-value">4px</span>;
+  <span class="code-property">font-family</span>: <span class="code-value">sans-serif</span>;
+  <span class="code-property">margin-bottom</span>: <span class="code-value">15px</span>;
+}
+
+<span class="code-selector">label</span> {
+  <span class="code-property">display</span>: <span class="code-value">block</span>;
+  <span class="code-property">margin-bottom</span>: <span class="code-value">5px</span>;
+  <span class="code-property">font-weight</span>: <span class="code-value">bold</span>;
+}</code></pre>
+              </div>
+            </div>
+          </div>
+
+          <div class="submission">
+            <div class="submission-text">
+              Submission: Once you complete the challenge, share your solution
+              by submitting your solution filename.
+            </div>
+            <a href="#" class="submit-button">Submit Solution</a>
+          </div>
+        </section>
+      </main>
+    </main>
+
+    <footer>
+      <div class="footer-logo">
+        <a href="../html/index.html">
+          <img src="../img/html-logo.png" alt="html-logo" />
+        </a>
+        <p>Mastering HTML through practical challenges</p>
+      </div>
+
+      <div class="footer-section">
+        <h4>Explore</h4>
+        <ul class="footer-links">
+          <li><a href="../html/index.html">Home</a></li>
+          <li><a href="../html/about.html">About Us</a></li>
+          <li><a href="#">Exercises</a></li>
+          <li><a href="../html/docs.html">Documentation</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Contacts</h4>
+        <ul class="footer-links">
+          <a href="mailto:vuthytuon168@gmail.com">
+            <li>Email: vuthytuon168@gmail.com</li>
+          </a>
+          <li>Phone: (+855) 16-400-108</li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Follow Us</h4>
+        <div class="social-links">
+          <a href="https://web.facebook.com/nhom.vothy/"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="https://github.com/Vuthy-Tourn"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/vuthy-tourn-14ab38354/"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </div>
+      </div>
+
+      <div class="copyright">© 2025 HTML Learner. All rights reserved.</div>
+    </footer>
+    <script src="../js/index.js"></script>
+  </body>
+</html>

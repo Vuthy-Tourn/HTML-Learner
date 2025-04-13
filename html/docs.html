@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../img/html-logo.png" type="image/x-icon" />
+      <!-- Description for search engines -->
+    <meta name="description" content="Detailed explanations of HTML tags, attributes, and best practices.">
+
+    <!-- Keywords (optional but helps slightly with SEO) -->
+    <meta
+      name="keywords"
+      content="HTML, Learn HTML, HTML Tutorial, Beginner HTML, HTML Practice"
+    />
+
+    <!-- Author -->
+    <meta name="author" content="Vuthy" />
+
+    <!-- Open Graph (for social sharing previews) -->
+    <meta property="og:title" content="HTML Learner" />
+    <meta
+      property="og:description"
+      content="Boost your HTML skills with hands-on coding challenges and practical examples on HTML Learner."
+    />
+    <meta
+      property="og:image"
+      content="../img/OG-img.png"
+    />
+    <meta property="og:url" content="https://html-learner.vercel.app/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card (for Twitter sharing) -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="HTML Learner" />
+    <meta
+      name="twitter:description"
+      content="Learn and practice HTML through interactive challenges on HTML Learner."
+    />
+    <meta
+      name="twitter:image"
+      content="../img/OG-img.png"
+    />
+    <title>HTML Documentation - HTML Learner</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/docs.css" />
+  </head>
+  <body>
+   <a href="#back-to-top" id="back-to-top-btn" class="back-to-top">
+  <i class="fa-solid fa-arrow-up"></i>
+</a>
+    <header>
+      <a href="../html/index.html">
+      <div class="logo">
+        <img src="../img/html-logo.png" alt="html-logo" />
+        <span style="color: var(--text-color);">HTML <span class="Learner">Learner</span></span>
+      </div>
+      </a>
+
+      <!-- Add hamburger button -->
+      <button class="mobile-menu-toggle" aria-label="Toggle menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <nav class="main-nav">
+        <ul>
+          <li><a href="../html/index.html">Home</a></li>
+          <li><a href="../html/exercises.html">Exercises</a></li>
+          <li><a href="../html/docs.html" class="active">Docs</a></li>
+          <li><a href="../html/about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="content-wrapper">
+      <aside class="sidebar">
+        <div class="sidebar-content">
+          <p class="section-title">Documentation</p>
+          <ul>
+             <li><a href="#" class="active">Getting Started</a></li>
+          <li><a href="#html-basics">HTML Basics</a></li>
+          <li><a href="#semantic-html">Semantic HTML</a></li>
+          <li><a href="#forms-tables">Forms & Tables</a></li>
+          <li><a href="#advanced-html">Advanced HTML</a></li>
+          <li><a href="#accessibility">Accessibility</a></li>
+          <li><a href="#best-practices">Best Practices</a></li>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <section class="doc-header">
+        <h1>HTML Documentation</h1>
+        <p>A comprehensive guide to HTML elements and best practices for the web.</p>
+      </section>
+
+      <section class="doc-section" id="html-basics">
+        <h2>HTML Basics</h2>
+        <p>HTML (HyperText Markup Language) is the standard language used to create web pages. It defines the structure and content of a web page through a series of elements. HTML elements tell the browser how to display the content.</p>
+
+        <div class="code-block">
+          <div class="code-header">
+            <div class="window-controls">
+              <div class="window-control control-close"></div>
+              <div class="window-control control-minimize"></div>
+              <div class="window-control control-maximize"></div>
+            </div>
+          </div>
+          <div class="code-content">
+            <code>&lt;!DOCTYPE html&gt;</code>
+            <code>&lt;html&gt;</code>
+            <code class="indent-1">&lt;head&gt;</code>
+            <code class="indent-2">&lt;title&gt;Page Title&lt;/title&gt;</code>
+            <code class="indent-1">&lt;/head&gt;</code>
+            <code class="indent-1">&lt;body&gt;</code>
+            <code class="indent-2">&lt;h1&gt;My First Heading&lt;/h1&gt;</code>
+            <code class="indent-2">&lt;p&gt;My first paragraph.&lt;/p&gt;</code>
+            <code class="indent-1">&lt;/body&gt;</code>
+            <code>&lt;/html&gt;</code>
+          </div>
+        </div>
+
+        <h3>Basic Elements</h3>
+
+        <table class="doc-table">
+          <thead>
+            <tr>
+              <th>Element</th>
+              <th>Description</th>
+              <th>Example</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>&lt;html&gt;</code></td>
+              <td>The root element of an HTML page</td>
+              <td><code>&lt;html&gt;&lt;/html&gt;</code></td>
+            </tr>
+            <tr>
+              <td><code>&lt;head&gt;</code></td>
+              <td>Contains meta information about the document</td>
+              <td><code>&lt;head&gt;&lt;title&gt;Page Title&lt;/title&gt;&lt;/head&gt;</code></td>
+            </tr>
+            <tr>
+              <td><code>&lt;title&gt;</code></td>
+              <td>Specifies a title for the document</td>
+              <td><code>&lt;title&gt;Page Title&lt;/title&gt;</code></td>
+            </tr>
+            <tr>
+              <td><code>&lt;body&gt;</code></td>
+              <td>Contains the visible page content</td>
+              <td><code>&lt;body&gt;&lt;h1&gt;Heading&lt;/h1&gt;&lt;/body&gt;</code></td>
+            </tr>
+            <tr>
+              <td><code>&lt;h1&gt; to &lt;h6&gt;</code></td>
+              <td>Defines HTML headings</td>
+              <td><code>&lt;h1&gt;This is heading 1&lt;/h1&gt;</code></td>
+            </tr>
+            <tr>
+              <td><code>&lt;p&gt;</code></td>
+              <td>Defines a paragraph</td>
+              <td><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></td>
+            </tr>
+            <tr>
+              <td><code>&lt;div&gt;</code></td>
+              <td>Defines a division or section</td>
+              <td><code>&lt;div&gt;Content container&lt;/div&gt;</code></td>
+            </tr>
+            <tr>
+              <td><code>&lt;span&gt;</code></td>
+              <td>Defines an inline container</td>
+              <td><code>&lt;span&gt;Inline text&lt;/span&gt;</code></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="doc-section" id="semantic-html">
+        <h2>Semantic HTML</h2>
+        <p>Semantic HTML elements clearly describe their meaning to both the browser and the developer. Using semantic tags helps search engines, screen readers, and other user devices to determine the importance and context of web pages.</p>
+
+        <div class="note-box">
+          <h4>Why Semantic HTML Matters</h4>
+          <p>Semantic HTML improves accessibility, SEO, and code maintainability. It makes your content more understandable to both machines and humans.</p>
+        </div>
+
+        <h3>Common Semantic Elements</h3>
+
+        <table class="doc-table">
+          <thead>
+            <tr>
+              <th>Element</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>&lt;header&gt;</code></td>
+              <td>Defines a header for a document or section</td>
+            </tr>
+            <tr>
+              <td><code>&lt;nav&gt;</code></td>
+              <td>Defines navigation links</td>
+            </tr>
+            <tr>
+              <td><code>&lt;main&gt;</code></td>
+              <td>Specifies the main content of a document</td>
+            </tr>
+            <tr>
+              <td><code>&lt;section&gt;</code></td>
+              <td>Defines a section in a document</td>
+            </tr>
+            <tr>
+              <td><code>&lt;article&gt;</code></td>
+              <td>Defines an independent, self-contained content</td>
+            </tr>
+            <tr>
+              <td><code>&lt;aside&gt;</code></td>
+              <td>Defines content aside from the page content</td>
+            </tr>
+            <tr>
+              <td><code>&lt;footer&gt;</code></td>
+              <td>Defines a footer for a document or section</td>
+            </tr>
+            <tr>
+              <td><code>&lt;figure&gt;</code></td>
+              <td>Specifies self-contained content, like illustrations</td>
+            </tr>
+            <tr>
+              <td><code>&lt;figcaption&gt;</code></td>
+              <td>Defines a caption for a figure element</td>
+            </tr>
+            <tr>
+              <td><code>&lt;time&gt;</code></td>
+              <td>Represents a specific period in time</td>
+            </tr>
+            <tr>
+              <td><code>&lt;mark&gt;</code></td>
+              <td>Represents text that is highlighted</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="code-block">
+          <div class="code-header">
+            <div class="window-controls">
+              <div class="window-control control-close"></div>
+              <div class="window-control control-minimize"></div>
+              <div class="window-control control-maximize"></div>
+            </div>
+          </div>
+          <div class="code-content">
+            <code>&lt;article&gt;</code>
+            <code class="indent-1">&lt;header&gt;</code>
+            <code class="indent-2">&lt;h2&gt;Article Title&lt;/h2&gt;</code>
+            <code class="indent-2">&lt;p&gt;Posted by &lt;time datetime="2025-04-13"&gt;April 13, 2025&lt;/time&gt;&lt;/p&gt;</code>
+            <code class="indent-1">&lt;/header&gt;</code>
+            <code class="indent-1">&lt;section&gt;</code>
+            <code class="indent-2">&lt;p&gt;Article content goes here...&lt;/p&gt;</code>
+            <code class="indent-1">&lt;/section&gt;</code>
+            <code class="indent-1">&lt;footer&gt;</code>
+            <code class="indent-2">&lt;p&gt;Author information&lt;/p&gt;</code>
+            <code class="indent-1">&lt;/footer&gt;</code>
+            <code>&lt;/article&gt;</code>
+          </div>
+        </div>
+      </section>
+
+      <section class="doc-section" id="forms-tables">
+        <h2>Forms & Tables</h2>
+        <p>HTML forms and tables are essential components for interactive web pages and data display.</p>
+
+        <h3>Form Elements</h3>
+
+        <div class="code-block">
+          <div class="code-header">
+            <div class="window-controls">
+              <div class="window-control control-close"></div>
+              <div class="window-control control-minimize"></div>
+              <div class="window-control control-maximize"></div>
+            </div>
+          </div>
+          <div class="code-content">
+            <code>&lt;form action="/submit-form" method="post"&gt;</code>
+            <code class="indent-1">&lt;div&gt;</code>
+            <code class="indent-2">&lt;label for="name"&gt;Name:&lt;/label&gt;</code>
+            <code class="indent-2">&lt;input type="text" id="name" name="name" required&gt;</code>
+            <code class="indent-1">&lt;/div&gt;</code>
+            <code class="indent-1">&lt;div&gt;</code>
+            <code class="indent-2">&lt;label for="email"&gt;Email:&lt;/label&gt;</code>
+            <code class="indent-2">&lt;input type="email" id="email" name="email" required&gt;</code>
+            <code class="indent-1">&lt;/div&gt;</code>
+            <code class="indent-1">&lt;div&gt;</code>
+            <code class="indent-2">&lt;label for="message"&gt;Message:&lt;/label&gt;</code>
+            <code class="indent-2">&lt;textarea id="message" name="message" rows="5" required&gt;&lt;/textarea&gt;</code>
+            <code class="indent-1">&lt;/div&gt;</code>
+            <code class="indent-1">&lt;div&gt;</code>
+            <code class="indent-2">&lt;label&gt;</code>
+            <code class="indent-3">&lt;input type="checkbox" name="subscribe" checked&gt;</code>
+            <code class="indent-3">Subscribe to newsletter</code>
+            <code class="indent-2">&lt;/label&gt;</code>
+            <code class="indent-1">&lt;/div&gt;</code>
+            <code class="indent-1">&lt;button type="submit"&gt;Submit&lt;/button&gt;</code>
+            <code>&lt;/form&gt;</code>
+          </div>
+        </div>
+
+        <h3>Input Types</h3>
+        <p>HTML5 introduced many new input types for forms that provide better user experience and validation.</p>
+
+        <table class="doc-table">
+          <thead>
+            <tr>
+              <th>Input Type</th>
+              <th>Description</th>
+              <th>Example</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>text</code></td>
+              <td>Single-line text input</td>
+              <td><code>&lt;input type="text"&gt;</code></td>
+            </tr>
+            <tr>
+              <td><code>email</code></td>
+              <td>Email address input</td>
+              <td><code>&lt;input type="email"&gt;</code></td>
+            </tr>
+            <tr>
+              <td><code>password</code></td>
+              <td>Password input field</td>
+              <td><code>&lt;input type="password"&gt;</code></td>
+            </tr>
+            <tr>
+              <td><code>number</code></td>
+              <td>Numerical input</td>
+              <td><code>&lt;input type="number"&gt;</code></td>
+            </tr>
+            <tr>
+              <td><code>date</code></td>
+              <td>Date selector</td>
+              <td><code>&lt;input type="date"&gt;</code></td>
+            </tr>
+            <tr>
+              <td><code>file</code></td>
+              <td>File upload control</td>
+              <td><code>&lt;input type="file"&gt;</code></td>
+            </tr>
+            <tr>
+              <td><code>checkbox</code></td>
+              <td>Checkboxes for multiple selections</td>
+              <td><code>&lt;input type="checkbox"&gt;</code></td>
+            </tr>
+            <tr>
+              <td><code>radio</code></td>
+              <td>Radio buttons for single selection</td>
+              <td><code>&lt;input type="radio"&gt;</code></td>
+            </tr>
+            <tr>
+              <td><code>color</code></td>
+              <td>Color picker</td>
+              <td><code>&lt;input type="color"&gt;</code></td>
+            </tr>
+            <tr>
+              <td><code>range</code></td>
+              <td>Range slider</td>
+              <td><code>&lt;input type="range"&gt;</code></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>Table Structure</h3>
+
+        <div class="code-block">
+          <div class="code-header">
+            <div class="window-controls">
+              <div class="window-control control-close"></div>
+              <div class="window-control control-minimize"></div>
+              <div class="window-control control-maximize"></div>
+            </div>
+          </div>
+          <div class="code-content">
+            <code>&lt;table border="1"&gt;</code>
+            <code class="indent-1">&lt;caption&gt;Employee Contact Information&lt;/caption&gt;</code>
+            <code class="indent-1">&lt;thead&gt;</code>
+            <code class="indent-2">&lt;tr&gt;</code>
+            <code class="indent-3">&lt;th&gt;Name&lt;/th&gt;</code>
+            <code class="indent-3">&lt;th&gt;Email&lt;/th&gt;</code>
+            <code class="indent-3">&lt;th&gt;Phone&lt;/th&gt;</code>
+            <code class="indent-2">&lt;/tr&gt;</code>
+            <code class="indent-1">&lt;/thead&gt;</code>
+            <code class="indent-1">&lt;tbody&gt;</code>
+            <code class="indent-2">&lt;tr&gt;</code>
+            <code class="indent-3">&lt;td&gt;John Doe&lt;/td&gt;</code>
+            <code class="indent-3">&lt;td&gt;john@example.com&lt;/td&gt;</code>
+            <code class="indent-3">&lt;td&gt;555-1234&lt;/td&gt;</code>
+            <code class="indent-2">&lt;/tr&gt;</code>
+            <code class="indent-2">&lt;tr&gt;</code>
+            <code class="indent-3">&lt;td&gt;Jane Smith&lt;/td&gt;</code>
+            <code class="indent-3">&lt;td&gt;jane@example.com&lt;/td&gt;</code>
+            <code class="indent-3">&lt;td&gt;555-5678&lt;/td&gt;</code>
+            <code class="indent-2">&lt;/tr&gt;</code>
+            <code class="indent-1">&lt;/tbody&gt;</code>
+            <code class="indent-1">&lt;tfoot&gt;</code>
+            <code class="indent-2">&lt;tr&gt;</code>
+            <code class="indent-3">&lt;td colspan="3"&gt;Updated April 2025&lt;/td&gt;</code>
+            <code class="indent-2">&lt;/tr&gt;</code>
+            <code class="indent-1">&lt;/tfoot&gt;</code>
+            <code>&lt;/table&gt;</code>
+          </div>
+        </div>
+
+        <div class="warning-box">
+          <h4>Table Accessibility</h4>
+          <p>Always include proper table headers and captions to ensure your tables are accessible to screen readers. Use the scope attribute to associate header cells with data cells.</p>
+        </div>
+      </section>
+
+        <section class="doc-section" id="advanced-html">
+          <h2>Advanced HTML Elements</h2>
+          <p>
+            HTML5 introduced many advanced features that enhance the web
+            experience.
+          </p>
+
+          <h3>Audio & Video</h3>
+
+          <div class="code-block">
+            <div class="code-header">
+            <div class="window-controls">
+              <div class="window-control control-close"></div>
+              <div class="window-control control-minimize"></div>
+              <div class="window-control control-maximize"></div>
+            </div>
+          </div>
+          <div class="code-content">
+            <code>&lt;audio controls&gt;</code>
+            <code class="indent-1"
+              >&lt;source src="audio.mp3" type="audio/mpeg"&gt;</code
+            >
+            <code class="indent-1"
+              >Your browser does not support the audio element.</code
+            >
+            <code>&lt;/audio&gt;</code>
+          </div>
+          </div>
+
+          <h3>Canvas & Graphics</h3>
+
+          <div class="code-block">
+             <div class="code-header">
+            <div class="window-controls">
+              <div class="window-control control-close"></div>
+              <div class="window-control control-minimize"></div>
+              <div class="window-control control-maximize"></div>
+            </div>
+          </div>
+          <div class="code-content">
+            <code
+              >&lt;canvas id="myCanvas" width="200" height="100"
+              style="border:1px solid #000000;"&gt;</code
+            >
+            <code class="indent-1"
+              >Your browser does not support the canvas element.</code
+            >
+            <code>&lt;/canvas&gt;</code>
+          </div>
+          </div>
+
+          <h3>Web Components</h3>
+
+          <div class="code-block">
+             <div class="code-header">
+            <div class="window-controls">
+              <div class="window-control control-close"></div>
+              <div class="window-control control-minimize"></div>
+              <div class="window-control control-maximize"></div>
+            </div>
+          </div>
+          <div class="code-content">
+            <code>&lt;template id="my-paragraph"&gt;</code>
+            <code class="indent-1"
+              >&lt;p&gt;My paragraph content&lt;/p&gt;</code
+            >
+            <code>&lt;/template&gt;</code>
+          </div>
+          </div>
+
+          <h3>Web Accessibility</h3>
+
+          <div class="code-block">
+             <div class="code-header">
+            <div class="window-controls">
+              <div class="window-control control-close"></div>
+              <div class="window-control control-minimize"></div>
+              <div class="window-control control-maximize"></div>
+            </div>
+          </div>
+          <div class="code-content">
+            <code>&lt;div role="alert" aria-live="assertive"&gt;</code>
+            <code class="indent-1">This is an important message!</code>
+            <code>&lt;/div&gt;</code>
+          </div>
+          </div>
+        </section>
+
+        <section class="doc-section" id="accessibility">
+          <h2>Accessibility</h2>
+          <p>
+            Building accessible web pages ensures that people with disabilities
+            can use your website. Here are some guidelines to help you create
+            HTML that is accessible to all users.
+          </p>
+
+          <h3>ARIA Attributes</h3>
+          <p>
+            ARIA (Accessible Rich Internet Applications) attributes provide
+            additional information to screen readers and other accessibility
+            tools.
+          </p>
+
+          <div class="code-block">
+             <div class="code-header">
+            <div class="window-controls">
+              <div class="window-control control-close"></div>
+              <div class="window-control control-minimize"></div>
+              <div class="window-control control-maximize"></div>
+            </div>
+          </div>
+          <div class="code-content">
+            <code
+              >&lt;button aria-label="Close"
+              aria-describedby="description"&gt;</code
+            >
+            <code class="indent-1"
+              >&lt;span class="icon"&gt;X&lt;/span&gt;</code
+            >
+            <code>&lt;/button&gt;</code>
+            <code
+              >&lt;div id="description" hidden&gt;Closes the current
+              dialog&lt;/div&gt;</code
+            >
+          </div>
+          </div>
+
+          <h3>Accessibility Checklist</h3>
+          <ul>
+            <li>Use semantic HTML elements</li>
+            <li>Provide alternative text for images</li>
+            <li>Use descriptive link text</li>
+            <li>Ensure keyboard accessibility</li>
+            <li>Create a logical tab order</li>
+            <li>Use ARIA attributes when needed</li>
+            <li>Provide sufficient color contrast</li>
+          </ul>
+        </section>
+
+        <section class="doc-section" id="best-practices">
+          <h2>HTML Best Practices</h2>
+          <p>
+            Following best practices will help create clean, maintainable, and
+            compatible HTML code.
+          </p>
+
+          <h3>General Guidelines</h3>
+          <ul>
+            <li>
+              Always declare the document type:
+              <code>&lt;!DOCTYPE html&gt;</code>
+            </li>
+            <li>Use lowercase element names and attributes</li>
+            <li>Always close all HTML elements</li>
+            <li>Use semantic HTML when possible</li>
+            <li>Ensure your HTML is valid with the W3C Validator</li>
+            <li>
+              Add alt text to images:
+              <code>&lt;img src="image.jpg" alt="Description"&gt;</code>
+            </li>
+            <li>Avoid using inline styles when possible</li>
+          </ul>
+
+          <h3>Performance Tips</h3>
+          <ul>
+            <li>Minimize the number of DOM elements</li>
+            <li>
+              Put CSS in the head and JavaScript before the closing body tag
+            </li>
+            <li>Use async or defer attributes with external scripts</li>
+            <li>Specify image dimensions to prevent layout shifts</li>
+            <li>Optimize images and use appropriate formats</li>
+          </ul>
+
+          <div class="tip-box">
+            <h4>Challenge Tips</h4>
+            <p>Practice working with HTML by completing these challenges:</p>
+            <ul>
+              <li>Create a perfectly semantic article page</li>
+              <li>Build a form with all possible input types</li>
+              <li>Create a complex table with spanning cells</li>
+              <li>Build a page with all heading levels used appropriately</li>
+              <li>Challenge yourself to create a validation-error-free page</li>
+            </ul>
+
+            <h4>Tips for Challenge Success</h4>
+            <ul>
+              <li>Plan your HTML structure before coding</li>
+              <li>Run your code through W3C validator</li>
+              <li>Test in multiple browsers</li>
+              <li>Use browser developer tools to inspect your HTML</li>
+              <li>Start simple, then add complexity</li>
+            </ul>
+          </div>
+        </section>
+      </main>
+    </main>
+
+    <footer>
+      <div class="footer-logo">
+         <a href="../html/index.html">
+        <img src="../img/html-logo.png" alt="html-logo" />
+        </a>
+        <p>Mastering HTML through practical challenges</p>
+      </div>
+
+      <div class="footer-section">
+        <h4>Explore</h4>
+        <ul class="footer-links">
+          <li><a href="../html/index.html">Home</a></li>
+          <li><a href="../html/about.html">About Us</a></li>
+          <li><a href="../html/exercises.html">Exercises</a></li>
+          <li><a href="#">Documentation</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Contacts</h4>
+        <ul class="footer-links">
+          <a href="mailto:vuthytuon168@gmail.com">
+          <li>Email: vuthytuon168@gmail.com</li>
+          </a>
+          <li>Phone: (+855) 16-400-108</li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Follow Us</h4>
+        <div class="social-links">
+          <a href="https://web.facebook.com/nhom.vothy/"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="https://github.com/Vuthy-Tourn"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/vuthy-tourn-14ab38354/"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </div>
+      </div>
+
+      <div class="copyright">© 2025 HTML Learner. All rights reserved.</div>
+    </footer>
+    <script src="../js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Description for search engines -->
+    <meta
+      name="description"
+      content="HTML Learner is a beginner-friendly platform to learn and practice HTML with hands-on challenges and real examples."
+    />
+
+    <!-- Keywords (optional but helps slightly with SEO) -->
+    <meta
+      name="keywords"
+      content="HTML, Learn HTML, HTML Tutorial, Beginner HTML, HTML Practice"
+    />
+
+    <!-- Author -->
+    <meta name="author" content="Vuthy" />
+
+    <!-- Open Graph (for social sharing previews) -->
+    <meta property="og:title" content="HTML Learner" />
+    <meta
+      property="og:description"
+      content="Boost your HTML skills with hands-on coding challenges and practical examples on HTML Learner."
+    />
+    <meta
+      property="og:image"
+      content="../img/OG-img.png"
+    />
+    <meta property="og:url" content="https://html-learner.vercel.app/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card (for Twitter sharing) -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="HTML Learner" />
+    <meta
+      name="twitter:description"
+      content="Learn and practice HTML through interactive challenges on HTML Learner."
+    />
+    <meta
+      name="twitter:image"
+      content="../img/OG-img.png"
+    />
+    <link rel="shortcut icon" href="../img/html-logo.png" type="image/x-icon" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <title>HTML Learner</title>
+  </head>
+  <body>
+    <a href="#back-to-top" id="back-to-top-btn" class="back-to-top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
+    <header>
+      <a href="../html/index.html">
+        <div class="logo">
+          <img src="../img/html-logo.png" alt="html-logo" />
+          <span style="color: var(--text-color)"
+            >HTML <span class="Learner">Learner</span></span
+          >
+        </div>
+      </a>
+
+      <!-- Add hamburger button -->
+      <button class="mobile-menu-toggle" aria-label="Toggle menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <nav class="main-nav">
+        <ul>
+          <li><a href="../html/index.html" class="active">Home</a></li>
+          <li><a href="../html/exercises.html">Exercises</a></li>
+          <li><a href="../html/docs.html">Docs</a></li>
+          <li><a href="../html/about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-content" data-aos="fade-right">
+          <span class="platform-badge">HTML LEARNING PLATFORM</span>
+          <h1>Master HTML Through <br /><span>Hands-on Challenges</span></h1>
+          <p>
+            A collection of exercises designed to build real HTML skills without
+            AI assistance. Created by Vuthy, student at ISTAD.
+          </p>
+          <div class="buttons">
+            <a href="../html/docs.html" class="btn btn-primary"
+              >Start Learning</a
+            >
+            <a href="../html/docs.html" class="btn btn-secondary"
+              >View Documentation</a
+            >
+          </div>
+        </div>
+        <div class="code-preview" data-aos="fade-left">
+          <div class="code-header">
+            <div class="code-dot red"></div>
+            <div class="code-dot yellow"></div>
+            <div class="code-dot green"></div>
+            <!-- <span>index.html</span> -->
+          </div>
+          <div class="code-content">
+            <div>&lt;!DOCTYPE html&gt;</div>
+            <div>&lt;html lang="en"&gt;</div>
+            <div>&lt;head&gt;</div>
+            <div style="padding-left: 20px">
+              &lt;title&gt;HTML Learner&lt;/title&gt;
+            </div>
+            <div>&lt;/head&gt;</div>
+            <div>&lt;body&gt;</div>
+            <div style="padding-left: 20px">
+              &lt;h1&gt;Welcome to HTML Learner&lt;/h1&gt;
+            </div>
+            <div style="padding-left: 20px">
+              &lt;p&gt;Here is the best place to learn HTML in your own
+              way.&lt;/p&gt;
+            </div>
+            <div style="padding-left: 20px">
+              &lt;p&gt;Start Your Journey Today with us!&lt;/p&gt;
+            </div>
+            <div>&lt;/body&gt;</div>
+            <div>&lt;/html&gt;</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="benefits">
+        <h2>Why These Challenges Matter</h2>
+        <p>Build genuine skills through hands-on problem solving</p>
+
+        <div class="benefit-cards" data-aos="fade-up">
+          <article class="card">
+            <div class="card-icon">
+              <img src="../img/brain.png" alt="brain" />
+            </div>
+            <h3>Build Real Skills</h3>
+            <p>
+              Develop genuine HTML Learner through hands-on problem solving
+              without AI assistance.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon">
+              <img src="../img/search.png" alt="search" />
+            </div>
+            <h3>Think Critically</h3>
+            <p>
+              Learn to analyze problems and develop creative solutions using
+              only HTML.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon">
+              <img src="../img/rocket.png" alt="rocket" />
+            </div>
+            <h3>Boost Creativity</h3>
+            <p>
+              Push the boundaries of what's possible with pure HTML and inline
+              CSS.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon">
+              <img src="../img/champion.png" alt="champion" />
+            </div>
+            <h3>Prove Your Skills</h3>
+            <p>
+              Complete challenges that demonstrate your true understanding of
+              web fundamentals.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="featured">
+        <h2>Featured Challenges</h2>
+        <p>Test your HTML skills with these exercises</p>
+
+        <div class="challenge-cards">
+          <article class="challenge-card" data-aos="fade-up-right">
+            <span class="badge beginner">Beginner</span>
+            <h3>Personal Trading Card</h3>
+            <p>
+              Create a digital trading card about yourself using only HTML and
+              inline CSS.
+            </p>
+            <a href="../html/exercises.html#beginner">Try Challenge →</a>
+          </article>
+
+          <article class="challenge-card" data-aos="fade-up">
+            <span class="badge intermediate">Intermediate</span>
+            <h3>Interactive Story</h3>
+            <p>
+              Build a "Choose Your Own Adventure" story using HTML forms and
+              anchor links.
+            </p>
+            <a href="../html/exercises.html#intermediate">Try Challenge →</a>
+          </article>
+
+          <article class="challenge-card" data-aos="fade-up-left">
+            <span class="badge advanced">Advanced</span>
+            <h3>Data Dashboard</h3>
+            <p>
+              Visualize complex data using only HTML tables, lists, and semantic
+              elements.
+            </p>
+            <a href="../html/exercises.html#advanced">Try Challenge →</a>
+          </article>
+        </div>
+
+        <a href="../html/exercises.html" class="btn">View All Challenges</a>
+      </section>
+
+      <section class="instructor">
+        <div class="instructor-details" data-aos="fade-right">
+          <span class="instructor-badge">MY INSTRUCTOR</span>
+          <h2>Ing Davann</h2>
+          <p>Frontend and Cyber Secruity Instructor at ISTAD</p>
+          <p>
+            With extensive experience in modern web technologies, I've designed
+            these challenges to help you build genuine HTML skills without
+            relying on AI tools or search engines.
+          </p>
+          <div class="buttons">
+            <a href="https://github.com/ingdavann" class="btn btn-secondary"
+              >Learn More About Him</a
+            >
+          </div>
+
+        </div>
+
+        <div class="tech-instructor" data-aos="fade-left">
+          <div class="orbit">
+            <div class="orbit-icon html"><i class="fab fa-html5"></i></div>
+            <div class="orbit-icon css"><i class="fab fa-css3-alt"></i></div>
+            <div class="orbit-icon js"><i class="fab fa-js"></i></div>
+            <div class="orbit-icon react"><i class="fab fa-react"></i></div>
+            <div class="orbit-icon nextjs">
+              <svg viewBox="0 0 128 128">
+                <path
+                  d="M64 0C28.7 0 0 28.7 0 64s28.7 64 64 64c11.2 0 21.7-2.9 30.8-7.9L48.4 55.3v36.6h-6.8V41.8h6.8l50.5 75.8C116.4 106.2 128 86.5 128 64c0-35.3-28.7-64-64-64zm22.1 84.6l-7.5-11.3V41.8h7.5v42.8z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+          <div class="instructor-core">
+            <img
+              src="../img/cherDavan.png"
+              alt="Instructor Davann"
+              class="instructor-photo"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-logo">
+        <a href="../html/index.html">
+          <img src="../img/html-logo.png" alt="html-logo" />
+        </a>
+        <p>Mastering HTML through practical challenges</p>
+      </div>
+
+      <div class="footer-section">
+        <h4>Explore</h4>
+        <ul class="footer-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="../html/about.html">About Us</a></li>
+          <li><a href="../html/exercises.html">Exercises</a></li>
+          <li><a href="../html/docs.html">Documentation</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Contacts</h4>
+        <ul class="footer-links">
+          <a href="mailto:vuthytuon168@gmail.com">
+            <li>Email: vuthytuon168@gmail.com</li>
+          </a>
+          <li>Phone: (+855) 16-400-108</li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Follow Us</h4>
+        <div class="social-links">
+          <a href="https://web.facebook.com/nhom.vothy/"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="https://github.com/Vuthy-Tourn"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/vuthy-tourn-14ab38354/"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </div>
+      </div>
+
+      <div class="copyright">© 2025 HTML Learner. All rights reserved.</div>
+    </footer>
+
+    <script src="../js/index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 700, // values from 0 to 3000, with step 50ms
+      });
+    </script>
+  </body>
+</html>
