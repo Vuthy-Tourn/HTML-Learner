@@ -80,7 +80,7 @@ nav.main-nav ul li a.active {
 .logo .Learner {
   color: var(--primary-color);
 }
-a{
+a {
   text-decoration: none;
 }
 /* Footer */
@@ -334,7 +334,7 @@ footer {
 }
 /* Responsive styles */
 @media (max-width: 768px) {
-   header {
+  header {
     padding: 1rem 1%;
   }
   nav ul {
@@ -349,15 +349,16 @@ footer {
   }
 
   nav.main-nav {
-    position: fixed;
-    top: 50px;
+    position: absolute;
+    top: 70px;
     left: 0;
     width: 100%;
     background-color: white;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1);
     transform: translateY(-150%);
     transition: transform 0.3s ease-in-out;
     z-index: 999;
+    overflow: hidden;
   }
 
   nav.main-nav.active {
@@ -392,9 +393,9 @@ footer {
     transform: translateY(-8px) rotate(-45deg);
   }
   .sidebar .section-title {
-  margin-top: 40px;
-}
-.footer-logo,
+    margin-top: 40px;
+  }
+  .footer-logo,
   .footer-section {
     flex: 1 0 100%;
     text-align: center;
@@ -416,7 +417,7 @@ footer {
 
 @media (max-width: 992px) {
   header {
-    padding: 1rem 1rem;
+    padding: 1rem;
   }
   .sidebar {
     width: 100%;
@@ -451,6 +452,4 @@ footer {
   .mobile-menu-toggle {
     display: block;
   }
-}
-@media (max-width: 425px) {
 }

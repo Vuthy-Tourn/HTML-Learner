@@ -1,8 +1,5 @@
-body {
-  color: var(--text-color);
-  line-height: 1.6;
-  max-width: 1540px;
-  margin: auto;
+main{
+  overflow: hidden;
 }
 /* Hero section */
 .hero {
@@ -144,8 +141,7 @@ body {
   padding: 2rem;
   box-shadow: var(--shadow);
   text-align: left;
-  max-width: 280px;
-  width: 100%;
+  width: 270px;
   border: 1px solid #eee;
   transition: var(--transition);
   position: relative;
@@ -503,6 +499,10 @@ body {
   .hero p {
     max-width: 100%;
   }
+  .hero h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
 
   .buttons {
     flex-direction: column;
@@ -517,5 +517,8 @@ body {
   }
   .featured > a {
     margin: 1rem;
+  }
+  .card{
+    width: 340px;
   }
 }

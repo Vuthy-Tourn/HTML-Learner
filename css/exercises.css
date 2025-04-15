@@ -467,7 +467,6 @@
   background: white;
   border-radius: 12px;
   overflow: hidden;
-  margin: 2rem;
 }
 
 .story-header {
@@ -1024,21 +1023,19 @@
 
 /* Responsive Styles */
 @media (max-width: 1200px) {
-  .main-container,
   .content-wrapper {
     margin: 1rem 6rem;
   }
 }
 
 @media (max-width: 992px) {
-  .main-container,
   .content-wrapper {
     margin: 1rem 3rem;
     flex-direction: column;
   }
 
-  .main-content {
-    padding-top: 60px;
+ .main-content {
+    padding: 1rem;
     max-width: 100%;
   }
 
@@ -1053,9 +1050,7 @@
 }
 
 @media (max-width: 576px) {
-  .main-content {
-    padding: 15px 10px;
-  }
+
 
   .difficulty-level {
     flex: 1 0 40%;
